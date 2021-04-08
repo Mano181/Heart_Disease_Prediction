@@ -5,7 +5,7 @@ Created on Thu Oct 15 19:58:25 2020
 """
 
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
