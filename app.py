@@ -1,11 +1,17 @@
 
 
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 15 19:58:25 2020
+@author: admin
+"""
+
 import numpy as np
 from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
-model=pickle.load(open('prediction.pkl','rb'))
+model=pickle.load(open('model.pkl','rb'))
 
 @app.route('/')
 def home():
